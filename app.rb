@@ -11,8 +11,24 @@ get '/' do
   erb :index
 end
 
-get '/about' do
-  erb :about
+get '/list' do
+  erb :list
+end
+
+get '/create' do
+  erb :create
+end
+
+get '/destroy' do
+  erb :destroy
+end
+
+get '/mark_as_tested' do
+  erb :mark_as_tested
+end
+
+get '/import' do
+  erb :import
 end
 
 get '/team/:username' do
